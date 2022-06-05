@@ -1,0 +1,37 @@
+<!-- index.html -->
+
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <title>CTA Bus Tracker</title>
+        <script src="index.js" defer></script>
+    </head>
+    <body onload="load()">
+        <h1>Tracking route
+            <select class="stylish-select" id="routeSelect" onchange="changeRoute()">
+                <option value="-1">...</option>
+            </select><br />
+            traveling
+            <select class="stylish-select" id="directionSelect" onchange="changeDirection()">
+                <option value="1">Northbound</option>
+                <option value="2">Southbound</option>
+            </select><br />
+        at
+        <select class="stylish-select" id="stopSelect" onchange="changeStops()">
+            <option value="1">56th &amp; Hyde Park Blvd.</option>
+        </select>
+        </h1>
+        <table class="stylish-table" id="busTable">
+            <thead>
+                <tr>
+                    <th>Route &#x23;</th>
+                    <th>Direction</th>
+                    <th>ETA</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </body>
+</html>

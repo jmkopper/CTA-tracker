@@ -1,0 +1,58 @@
+<!-- search.html -->
+
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <title>CTA Bus Tracker</title>
+        <script src="index.js" defer></script>
+        <script src="mongo.js" defer></script>
+    </head>
+    <body>
+        <section class="wrapper">
+
+            <!-- first row -->
+
+        <div id="searchDiv">
+            <br />
+            <br />
+            <br />
+        <input type="text" class="stylish-input" id="search" placeholder="Search for a stop..." onkeyup="searchForStop(this.value);" />
+        </div>
+
+        <div id="resultsTextDiv">
+            Tracking buses at <div id="stopDiv"> ...</div>
+        </div>
+
+            <!-- second row -->
+
+        <div id="resultsDiv">
+        <table class="stylish-table" id="searchResultsTable">
+            <thead>
+                <tr>
+                    <th>Stop ID</th>
+                    <th>Stop</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        </div>
+
+        <div id="predictionDiv">
+        <table class="stylish-table" id="busTable">
+            <thead>
+                <tr>
+                    <th>Route &#x23;</th>
+                    <th>Direction</th>
+                    <th>ETA</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        </div>
+
+    </section>
+    </body>
+</html>

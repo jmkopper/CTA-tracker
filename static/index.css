@@ -1,0 +1,139 @@
+/* index.css */
+:root {
+    font-family: sans-serif;
+    --primary: #6B6293;
+    --primary-dark: #474162;
+    --primary-light: #3E3956;
+    --accent: #cc3e28;
+    --accent-light: #e79588;
+    --alt-accent: #afe9da;
+}
+
+.stylish-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 24px;
+    font-family: sans-serif;
+    min-width: 400px;
+}
+
+.stylish-table thead tr {
+    background-color: var(--primary);
+    color: #ffffff;
+    text-align: left;
+}
+
+.stylish-table th,
+.stylish-table td {
+    padding: 12px 15px;
+}
+
+.stylish-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+#searchResultsTable tbody tr {
+    cursor: pointer;
+}
+
+.stylish-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.stylish-table tbody tr:last-of-type {
+    border-bottom: 2px var(--primary);
+}
+
+.stylish-table tbody tr.active-row {
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.stylish-button {
+    background-color: var(--primary);
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.stylish-button:hover {
+    background-color: var(--primary-dark);
+}
+
+.stylish-button:active {
+    background-color: var(--primary-light);
+}
+
+.stylish-select {
+    padding: 8px;
+    -webkit-appearance: none;
+    color: var(--accent);
+    border: none;
+    font-size: 60px;
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: #ffffff;
+}
+
+.stylish-select option {
+    background-color: #ffffff;
+    background: #ffffff;
+    font-weight: bold;
+}
+
+.stylish-input {
+    background: transparent;
+    border: 0;
+    border-bottom: 5px solid var(--accent);
+    color: var(--accent);
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.stylish-input:focus {
+    outline: none;
+}
+
+.stylish-input::placeholder {
+    color: var(--accent-light);
+}
+
+h1 {
+    font-size: 60px;
+}
+
+
+/* search.html layout */
+.wrapper {
+    width: 100%;
+
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px 20px;
+  
+    justify-content: start;
+    align-content: end;
+    justify-items: start;
+    align-items: start;
+}
+  
+#resultsTextDiv {
+    font-size: 60px;
+    font-weight: bold;
+}  
+
+#stopDiv {
+    color: var(--accent);
+}
+
+#searchResultsTable tbody tr:hover {
+    background-color: var(--alt-accent) !important;
+}
+  
